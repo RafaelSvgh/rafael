@@ -23,6 +23,9 @@
         <th scope="col" class="px-6 py-3">Gestion</th>
         <th scope="col" class="px-6 py-3">Grupo</th>
         <th scope="col" class="px-6 py-3">Materia</th>
+        <th scope="col" class="px-4 py-3">Día</th>
+        <th scope="col" class="px-4 py-3">Hora</th>
+        <th scope="col" class="px-3 py-3">Aula</th>
         <th scope="col" class="px-6 py-3">Acciones</th>
       </tr>
     </thead>
@@ -54,6 +57,22 @@
         </td>
         <td class="px-6 py-4">
           {{ carga.materia.nombre }}
+        </td>
+        <td class="px-4 py-4">
+          <ul>
+            <li *ngFor="let horario of carga.horarios">{{ horario.dia }}</li>
+          </ul>
+        </td>
+        <td class="px-3 py-4">
+          <div *ngFor="let horario of carga.horarios">
+            <div>{{ horario.horaInicio }}</div>
+            <div>{{ horario.horaFin }}</div>
+          </div>
+        </td>
+        <td class="px-3 py-4">
+          <ul>
+            <li *ngFor="let horario of carga.horarios">{{ horario.aula }}</li>
+          </ul>
         </td>
         <td class="px-6 py-4">
           <a
