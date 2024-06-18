@@ -11,7 +11,7 @@ describe('CrearAsisComponent', () => {
       imports: [CrearAsisComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(CrearAsisComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

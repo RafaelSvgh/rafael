@@ -42,7 +42,7 @@
       <div class="mb-4" formGroupName="horario">
         <label for="horarioId" class="block text-sm font-medium text-gray-700">horario</label>
         <select id="horarioId" formControlName="id" class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50" required>
-          <option *ngFor="let horario of horarios" [value]="horario.id">{{ horario.dia }}</option>
+          <option *ngFor="let horario of horarios" [value]="horario.id">{{ horario.dia  }}</option>
         </select>
         <div *ngIf="asistenciaForm.get('horario.id')?.invalid && asistenciaForm.get('horario.id')?.touched">
 

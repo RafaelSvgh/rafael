@@ -76,7 +76,7 @@ export const routes: Routes = [
 
       {
         path: 'usuario',
-        title: 'usuario',
+        title: 'Usuario',
         component: UsuarioComponent,
         children: [
           {
@@ -152,7 +152,7 @@ export const routes: Routes = [
       },
       {
         path: 'carrera-materia',
-        title: 'Carrea Materia',
+        title: 'Materia Carrera',
         component: CarreraMateriaComponent,
         children: [
           {
@@ -171,7 +171,7 @@ export const routes: Routes = [
       },
       {
         path: 'modulo',
-        title: 'Modulo',
+        title: 'Módulo',
         component: ModuloComponent,
         children: [
           {
@@ -285,7 +285,7 @@ export const routes: Routes = [
       },
       {
         path: 'gestion',
-        title: 'Gestion',
+        title: 'Gestión',
         component: GestionComponent,
         children: [
           {

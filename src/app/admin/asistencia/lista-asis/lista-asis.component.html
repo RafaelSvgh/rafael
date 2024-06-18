@@ -3,7 +3,7 @@
     <h2 class="text-lg font-semibold text-gray-900 dark:text-white">
       Asistencia
     </h2>
-   
+    <a [routerLink]="['/asistencia/crear']" class="btngray">Crear</a>
   </div>
   <table
     class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
@@ -13,6 +13,7 @@
     >
       <tr>
         <th scope="col" class="px-6 py-3">ID</th>
+        <th scope="col" class="px-6 py-3">Docente</th>
         <th scope="col" class="px-6 py-3">Estado</th>
         <th scope="col" class="px-6 py-3">Fecha</th>
         <th scope="col" class="px-6 py-3">Hora</th>
@@ -32,6 +33,9 @@
         >
           {{ asistencia.id }}
         </th>
+        <td class="px-6 py-4">
+          {{ asistencia.apellido + " " + asistencia.nombre }}
+        </td>
         <td class="px-6 py-4">
           {{ asistencia.estado }}
         </td>
